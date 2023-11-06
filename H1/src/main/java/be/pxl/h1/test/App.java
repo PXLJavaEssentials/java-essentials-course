@@ -16,5 +16,12 @@ public class App {
             System.out.printf("   > [%s] initialized%n", module);
         }
         System.out.println("All systems initialized. Ready to go!");
+
+        char c = 'S';
+
+        System.out.println(c);
+        System.out.println(c+1);
+        c = (char) (c+1);
+        System.out.println(c);
     }
 }
