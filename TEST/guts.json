@@ -1,0 +1,6 @@
+{
+  "apiUrl":"http://localhost:5000/",
+  "webUrl":"localhost:4200",
+  "sourceDirectory":"src/main/java/",
+  "testDirectory":"src/test/java/"
+}
