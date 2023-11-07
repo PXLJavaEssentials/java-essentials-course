@@ -1,17 +1,22 @@
 package be.pxl.h4.example;
 
-public class Author {
-
+public class Contact {
+    private String emailAddress;
     private String firstName;
     private String lastName;
 
-    public Author() {
-        this("onbekend", "onbekend");
-    }
-
-    public Author(String firstName, String lastName) {
+    public Contact(String emailAddress, String firstName, String lastName) {
+        this.emailAddress = emailAddress;
         this.firstName = firstName;
         this.lastName = lastName;
+    }
+
+    public String getEmailAddress() {
+        return emailAddress;
+    }
+
+    public void setEmailAddress(String emailAddress) {
+        this.emailAddress = emailAddress;
     }
 
     public String getFirstName() {
@@ -32,6 +37,6 @@ public class Author {
 
     @Override
     public String toString() {
-        return String.format("%s %s", firstName, lastName);
+        return emailAddress;
     }
 }
