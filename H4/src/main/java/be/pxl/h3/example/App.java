@@ -1,6 +1,5 @@
 package be.pxl.h3.example;
 
-import java.lang.reflect.Array;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
