@@ -101,7 +101,7 @@ public class PersoonTest {
     @DisplayName("Persoon - groei met parameter moet legnte verhogen met meegegeven waarde")
     public void testGroeiMetParameter() {
         persoon.setLengte(LENGTE);
-        persoon.groei(0.03);
+        persoon.groei(3);
         assertEquals(LENGTE+0.03, persoon.getLengte(), 0.01);
     }
 
@@ -109,7 +109,7 @@ public class PersoonTest {
     @DisplayName("Persoon - maximum lengte mag niet overschreden worden door aanroep van groei met parameters")
     public void testGroeiMetParameterBijTeHoogResultaat() {
         persoon.setLengte(Persoon.MAX_LENGTE);
-        persoon.groei(0.03);
+        persoon.groei(3);
         assertEquals(Persoon.MAX_LENGTE, persoon.getLengte(), 0.01);
     }
 

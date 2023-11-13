@@ -3,6 +3,9 @@ package be.pxl.h4.oefening3;
 import be.pxl.guts.junit_5.GutsFixture;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @GutsFixture(courseCode = "javaEss1", chapterCode = "H4", exerciseCode = "Oefening 3 - Gondelbaan", sourceCodeRelativeFilePaths = "Gondelbaan.java")
@@ -22,7 +25,7 @@ public class GondelbaanTest {
 
     private Gondelbaan gondelbaan;
 
-    @Before
+    @BeforeEach
     public void init() {
         gondelbaan = new Gondelbaan(NAAM, LAND);
     }
