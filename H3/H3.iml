@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module version="4">
   <component name="AdditionalModuleElements">
-    <content url="file://$MODULE_DIR$/H3" dumb="true">
-      <excludeFolder url="file://$MODULE_DIR$/H3/src/test/java/be/pxl/h3/extra1" />
-      <excludeFolder url="file://$MODULE_DIR$/H3/src/test/java/be/pxl/h3/oefening2" />
-      <excludeFolder url="file://$MODULE_DIR$/H3/src/test/java/be/pxl/h3/oefening4" />
+    <content url="file://$MODULE_DIR$" dumb="true">
+      <excludeFolder url="file://$MODULE_DIR$/src/test/java/be/pxl/h3/extra1" />
+      <excludeFolder url="file://$MODULE_DIR$/src/test/java/be/pxl/h3/oefening2" />
+      <excludeFolder url="file://$MODULE_DIR$/src/test/java/be/pxl/h3/oefening4" />
     </content>
   </component>
 </module>
