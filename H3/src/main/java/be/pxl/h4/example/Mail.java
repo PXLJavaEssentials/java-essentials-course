@@ -1,4 +1,4 @@
-package be.pxl.h3.example;
+package be.pxl.h4.example;
 
 public class Mail {
     private String title;

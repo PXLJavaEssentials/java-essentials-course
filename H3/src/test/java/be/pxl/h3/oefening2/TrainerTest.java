@@ -1,4 +1,4 @@
-package be.pxl.h4.oef2;
+package be.pxl.h3.oefening2;
 
 import be.pxl.guts.junit_5.GutsFixture;
 import org.junit.jupiter.api.BeforeEach;

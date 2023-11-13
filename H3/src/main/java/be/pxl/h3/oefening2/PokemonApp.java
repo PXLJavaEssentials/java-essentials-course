@@ -1,6 +1,4 @@
-package be.pxl.h3.oef2;
-
-import java.util.Random;
+package be.pxl.h3.oefening2;
 
 public class PokemonApp {
 

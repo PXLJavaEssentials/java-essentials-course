@@ -1,10 +1,4 @@
-package be.pxl.h3.ex1;
-
-import javax.imageio.ImageIO;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+package be.pxl.h3.extra1;
 
 public class ImageWriter {
 

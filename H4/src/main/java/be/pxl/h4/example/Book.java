@@ -1,4 +1,4 @@
-package be.pxl.h3.example;
+package be.pxl.h4.example;
 
 import java.time.LocalDate;
 import java.util.Random;
