@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.time.LocalDate;
 
-@GutsFixture(courseCode = "javaEss1", chapterCode = "H4", exerciseCode = "Oefening 3 - Persoon", sourceCodeRelativeFilePaths = "Persoon.java")
+@GutsFixture(courseCode = "javaEss1", chapterCode = "H4", exerciseCode = "1 - Persoon", sourceCodeRelativeFilePaths = "Persoon.java")
 public class PersoonTest {
 
     public static final String VOORNAAM = "Franky";
@@ -173,7 +173,7 @@ public class PersoonTest {
     }
 
     @Test
-    @DisplayName("Persoon - naam moet correct geëncrypteerd worden door encrypteerNaam")
+    @DisplayName("Persoon - naam moet correct geencrypteerd worden door encrypteerNaam")
     public void testEncrypteerNaam() {
         assertEquals("G/Wbo!efs!fmtu", persoon.encrypteerNaam(1));
         assertEquals("O7_jw)mn{)nu|}", persoon.encrypteerNaam(9));
