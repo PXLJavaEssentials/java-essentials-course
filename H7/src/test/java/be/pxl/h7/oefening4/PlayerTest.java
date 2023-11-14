@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@GutsFixture(courseCode = "javaEss1", chapterCode = "H7", exerciseCode = "Oefening 4 - CheckPointGame", sourceCodeRelativeFilePaths = "Player.java")
+@GutsFixture(courseCode = "javaEss1", chapterCode = "H7", exerciseCode = "4 - CheckPointGame", sourceCodeRelativeFilePaths = "Player.java")
 public class PlayerTest {
 
 	private Player player;

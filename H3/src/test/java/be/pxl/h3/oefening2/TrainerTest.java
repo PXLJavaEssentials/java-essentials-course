@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
 
 
-@GutsFixture(courseCode = "javaEss1", chapterCode = "H3", exerciseCode = "Oefening 2 - Pokemon", sourceCodeRelativeFilePaths = "Trainer.java")
+@GutsFixture(courseCode = "javaEss1", chapterCode = "H3", exerciseCode = "2 - Pokemon", sourceCodeRelativeFilePaths = "Trainer.java")
 public class TrainerTest {
     public static final String NAME = "SAM";
     public static final int DEFAULT_POKEDEX_SIZE = 10;

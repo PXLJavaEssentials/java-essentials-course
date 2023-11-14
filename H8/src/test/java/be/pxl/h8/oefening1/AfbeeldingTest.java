@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-@GutsFixture(courseCode = "javaEss1", chapterCode = "H8", exerciseCode = "Oefening 1 - File System", sourceCodeRelativeFilePaths = "Afbeelding.java")
+@GutsFixture(courseCode = "javaEss1", chapterCode = "H8", exerciseCode = "1 - File System", sourceCodeRelativeFilePaths = "Afbeelding.java")
 public class AfbeeldingTest {
 
     @Test

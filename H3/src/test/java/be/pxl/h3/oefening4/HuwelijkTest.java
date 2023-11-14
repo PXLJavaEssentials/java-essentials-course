@@ -9,7 +9,7 @@ import java.time.LocalDate;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@GutsFixture(courseCode = "javaEss1", chapterCode = "H3", exerciseCode = "Oefening 4 - Huwelijk", sourceCodeRelativeFilePaths = "Huwelijk.java")
+@GutsFixture(courseCode = "javaEss1", chapterCode = "H3", exerciseCode = "4 - Huwelijk", sourceCodeRelativeFilePaths = "Huwelijk.java")
 public class HuwelijkTest {
 
     private static final Persoon PARTNER1 = new Persoon("Vervoort", "Jos", LocalDate.of(1974,2,15), new Adres("Nieuwstraat", "156B", 3500, "Hasselt"));

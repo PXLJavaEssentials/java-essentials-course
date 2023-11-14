@@ -10,7 +10,7 @@ import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@GutsFixture(courseCode = "javaEss1", chapterCode = "H6", exerciseCode = "Oefening 2 - Kaartspel", sourceCodeRelativeFilePaths = "Soort.java")
+@GutsFixture(courseCode = "javaEss1", chapterCode = "H6", exerciseCode = "2 - Kaartspel", sourceCodeRelativeFilePaths = "Soort.java")
 public class SoortTest {
 
     public static final List<String> otherList = Arrays.asList("HARTEN", "RUITEN", "SCHOPPEN", "KLAVEREN");

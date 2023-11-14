@@ -9,7 +9,7 @@ import java.util.Arrays;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@GutsFixture(courseCode = "javaEss1", chapterCode = "H4", exerciseCode = "Oefening 3 - Gondelbaan", sourceCodeRelativeFilePaths = "Gondelbaan.java")
+@GutsFixture(courseCode = "javaEss1", chapterCode = "H4", exerciseCode = "3 - Gondelbaan", sourceCodeRelativeFilePaths = "Gondelbaan.java")
 public class GondelbaanTest {
 
     public static final String NAAM = "Gondelbaantje Frank";

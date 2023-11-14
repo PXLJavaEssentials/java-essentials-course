@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-@GutsFixture(courseCode = "javaEss1", chapterCode = "H3", exerciseCode = "Oefening 2 - Pokemon", sourceCodeRelativeFilePaths = "Pokemon.java")
+@GutsFixture(courseCode = "javaEss1", chapterCode = "H3", exerciseCode = "2 - Pokemon", sourceCodeRelativeFilePaths = "Pokemon.java")
 public class PokemonTest {
     public static final String NAME = "Pikachu";
     public static final String TYPE = "Electrical";

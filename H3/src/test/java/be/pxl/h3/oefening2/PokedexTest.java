@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@GutsFixture(courseCode = "javaEss1", chapterCode = "H3", exerciseCode = "Oefening 2 - Pokemon", sourceCodeRelativeFilePaths = "Pokedex.java")
+@GutsFixture(courseCode = "javaEss1", chapterCode = "H3", exerciseCode = "2 - Pokemon", sourceCodeRelativeFilePaths = "Pokedex.java")
 public class PokedexTest {
     public static final int SIZE = 8;
 

@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import java.time.LocalDate;
 
-@GutsFixture(courseCode = "javaEss1", chapterCode = "H3", exerciseCode = "Oefening 4 - Huwelijk", sourceCodeRelativeFilePaths = "Persoon.java")
+@GutsFixture(courseCode = "javaEss1", chapterCode = "H3", exerciseCode = "4 - Huwelijk", sourceCodeRelativeFilePaths = "Persoon.java")
 public class PersoonTest {
 
     public static final String VOORNAAM = "Ann";
