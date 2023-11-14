@@ -32,6 +32,7 @@ public class GondelbaanTest {
     }
 
     @Test
+    @DisplayName("Gondelbaan - constructor met 4 parameters moet naam, land, lengte en snelheid opslaan")
     public void testConstructorMet4Parameters() {
         Gondelbaan g = new Gondelbaan(NAAM, LAND, LENGTE, SNELHEID);
 
@@ -42,6 +43,7 @@ public class GondelbaanTest {
     }
 
     @Test
+    @DisplayName("Gondelbaan - constructor met 2 parameters moet naam, land opslaan en default waarden 2 en 6 opslaan voor lengte en snelheid")
     public void testConstructorMet2Parameters() {
         assertEquals(NAAM, gondelbaan.getNaam());
         assertEquals(LAND, gondelbaan.getLand());
@@ -50,6 +52,7 @@ public class GondelbaanTest {
     }
 
     @Test
+    @DisplayName("Gondelbaan - Test alle setters")
     public void testSetters() {
         gondelbaan.setNaam(NAAM+"x");
         assertEquals(NAAM+"x", gondelbaan.getNaam());
@@ -71,6 +74,7 @@ public class GondelbaanTest {
     }
 
     @Test
+    @DisplayName("Gondelbaan - setHoogte moet laagste waarde als dalstation opslaan")
     public void testSetHoogteKleinsteEerst() {
         gondelbaan.setHoogte(DALSTATION, BERGSTATION);
         assertEquals(DALSTATION, gondelbaan.getHoogteDalstation());
@@ -78,6 +82,7 @@ public class GondelbaanTest {
     }
 
     @Test
+    @DisplayName("Gondelbaan - setHoogte moet hoogste waarde als bergstation opslaan")
     public void testSetHoogteGrootsteEerst() {
         gondelbaan.setHoogte(BERGSTATION, DALSTATION);
         assertEquals(DALSTATION, gondelbaan.getHoogteDalstation());
@@ -85,12 +90,14 @@ public class GondelbaanTest {
     }
 
     @Test
+    @DisplayName("Gondelbaan - getHoogteverschil moet verschil tussen berg- en dalstation geven")
     public void testGetHoogteVerschil() {
         gondelbaan.setHoogte(BERGSTATION, DALSTATION);
         assertEquals(BERGSTATION-DALSTATION, gondelbaan.getHoogteVerschil());
     }
 
     @Test
+    @DisplayName("Gondelbaan - setLand moet geldige landen opslaan")
     public void testSetLandAlleGeldigeWaarden() {
         ArrayList<String> geldig = new ArrayList<>(Arrays.asList("Italië", "Oostenrijk", "Zwitserland", "Frankrijk"));
         for(String geldigLand:geldig) {
@@ -100,24 +107,28 @@ public class GondelbaanTest {
     }
 
     @Test
+    @DisplayName("Gondelbaan - setLand moet ongeldige waarde niet opslaan")
     public void testSetLandVerkeerdeWaarde() {
         gondelbaan.setLand("Aardappel");
         assertEquals("Onbekend", gondelbaan.getLand());
     }
 
     @Test
+    @DisplayName("Gondelbaan - setSneheid moet minimale snelheid respecteren")
     public void testSetSnelheidTeLageWaarde() {
         gondelbaan.setSnelheid(MIN_SNELHEID-1);
         assertEquals(MIN_SNELHEID, gondelbaan.getSnelheid());
     }
 
     @Test
+    @DisplayName("Gondelbaan - setSnelheid moet maximale snelheid respecteren")
     public void testSetSnelheidTeHogeWaarde() {
         gondelbaan.setSnelheid(MAX_SNELHEID+1);
         assertEquals(MAX_SNELHEID, gondelbaan.getSnelheid());
     }
 
     @Test
+    @DisplayName("Gondelbaan - setSnelheid grenzen voor minimum en maximum snelheid moeten inclusief zijn")
     public void testSetSnelheidGrenzenInclusief() {
         gondelbaan.setSnelheid(MIN_SNELHEID);
         assertEquals(MIN_SNELHEID, gondelbaan.getSnelheid());
@@ -127,18 +138,21 @@ public class GondelbaanTest {
     }
 
     @Test
+    @DisplayName("Gondelbaan - setNaam moet eerste letters naar hoofdletter zetten")
     public void testSetNaamEersteLettersHoofdletter() {
         gondelbaan.setNaam("gondelbaantje frank");
         assertEquals("Gondelbaantje Frank", gondelbaan.getNaam());
     }
 
     @Test
+    @DisplayName("Gondelbaan - setNaam moet alle letters buiten de eerste naar kleine letter zetten")
     public void testSetNaamAndereLettersKleineLetter() {
         gondelbaan.setNaam("gondeLbAantje frANK");
         assertEquals("Gondelbaantje Frank", gondelbaan.getNaam());
     }
 
     @Test
+    @DisplayName("Gondelbaan - duur moet correct berekend worden op basis van lengte en snelheid")
     public void testGetDuur() {
         gondelbaan.setSnelheid(SNELHEID);
         gondelbaan.setLengte(LENGTE);
@@ -147,6 +161,7 @@ public class GondelbaanTest {
     }
 
     @Test
+    @DisplayName("Gondelbaan - vervoerscapaciteit moet correct  berekend worden")
     public void testGetVervoersCapaciteit() {
         gondelbaan.setSnelheid(SNELHEID);
         gondelbaan.setLengte(LENGTE);
@@ -160,6 +175,7 @@ public class GondelbaanTest {
     }
 
     @Test
+    @DisplayName("Gondelbaan - toString moet een correct overzicht tonen")
     public void testToString() {
         gondelbaan.setHoogte(DALSTATION, BERGSTATION);
         assertEquals(NAAM + " [" + (BERGSTATION-DALSTATION) + "m]", gondelbaan.toString());
