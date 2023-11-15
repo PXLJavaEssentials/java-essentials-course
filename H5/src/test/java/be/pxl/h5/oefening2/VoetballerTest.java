@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@GutsFixture(courseCode = "javaEss1", chapterCode = "H5", exerciseCode = "1 - Werknemers", sourceCodeRelativeFilePaths = "Voetballer.java")
+@GutsFixture(courseCode = "javaEss1", chapterCode = "H5", exerciseCode = "2 - Sporters", sourceCodeRelativeFilePaths = "Voetballer.java")
 public class VoetballerTest {
     @Test
     @DisplayName("Sporter - Constructor met 2 parameters moet naam opslaan")
