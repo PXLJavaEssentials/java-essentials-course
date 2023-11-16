@@ -10,7 +10,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>H1</module>
-        <module>TEST</module>
         <module>H2</module>
         <module>H4</module>
         <module>H3</module>
