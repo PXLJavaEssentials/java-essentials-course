@@ -2,6 +2,7 @@ package be.pxl.h2.oef1;
 
 
 import be.pxl.guts.junit_5.GutsFixture;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
@@ -12,7 +13,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class PersoonTest {
 
     @Test
-    // @DisplayName("Test constructor met naam en voornaam")
+    @DisplayName("Test constructor met naam en voornaam")
     public void testConstructorMetNaamEnVoornaam() {
         Persoon persoon = new Persoon("Michael", "Mystery");
 
@@ -21,7 +22,7 @@ public class PersoonTest {
     }
 
     @Test
-    // @DisplayName("Test default constructor")
+    @DisplayName("Test default constructor")
     public void testDefaultConstructor() {
         Persoon persoon = new Persoon();
 
@@ -30,7 +31,7 @@ public class PersoonTest {
     }
 
     @Test
-    // @DisplayName("Test set-methoden")
+    @DisplayName("Test set-methoden")
     public void testSetMethoden() {
         Persoon persoon = new Persoon();
         persoon.setVoornaam("Jane");
@@ -47,7 +48,7 @@ public class PersoonTest {
     }
 
     @Test
-    // @DisplayName("Test berekenBmi() methode")
+    @DisplayName("Test berekenBmi() methode")
     public void testBerekenBmi() {
         Persoon persoon = new Persoon();
         persoon.setGewicht(70.0);
@@ -57,7 +58,7 @@ public class PersoonTest {
     }
 
     @Test
-    // @DisplayName("Test geefOmschrijving() methode")
+    @DisplayName("Test geefOmschrijving() methode")
     public void testGeefOmschrijving() {
         Persoon persoon = new Persoon();
         persoon.setGewicht(60.0);
@@ -67,7 +68,7 @@ public class PersoonTest {
     }
 
     @Test
-    // @DisplayName("Test voegVoornamenToe() methode")
+    @DisplayName("Test voegVoornamenToe() methode")
     public void testVoegVoornamenToe() {
         Persoon persoon = new Persoon("John", "Doe");
         persoon.voegVoornamenToe(new String[]{"James", "Alice"});
@@ -76,7 +77,7 @@ public class PersoonTest {
     }
 
     @Test
-    // @DisplayName("Test getLeeftijd() methode")
+    @DisplayName("Test getLeeftijd() methode")
     public void testGetLeeftijd() {
         Persoon persoon = new Persoon();
         persoon.setGeboortejaar(1990);
@@ -85,7 +86,7 @@ public class PersoonTest {
     }
 
     @Test
-    // @DisplayName("Test setLengte() methode met te grote lengte")
+    @DisplayName("Test setLengte() methode met te grote lengte")
     public void testSetLengteTeGroot() {
         Persoon persoon = new Persoon();
         persoon.setLengte(3.0);
@@ -94,7 +95,7 @@ public class PersoonTest {
     }
 
     @Test
-    // @DisplayName("Persoon zou 1 centimeter moeten groeien met de standaard groei() methode")
+    @DisplayName("Persoon zou 1 centimeter moeten groeien met de standaard groei() methode")
     public void testGroeiZonderParameters() {
         Persoon persoon = new Persoon();
         persoon.setLengte(1.5);
@@ -104,7 +105,7 @@ public class PersoonTest {
     }
 
     @Test
-    // @DisplayName("Persoon zou 5 centimeter moeten groeien met de groei() methode met parameters")
+    @DisplayName("Persoon zou 5 centimeter moeten groeien met de groei() methode met parameters")
     public void testGroeiMetParameters() {
         Persoon persoon = new Persoon();
         persoon.setLengte(1.5);
@@ -114,7 +115,7 @@ public class PersoonTest {
     }
 
     @Test
-    // @DisplayName("Persoon mag na gebruik van de groei methode met parameters niet boven de maximumgrootte gaan")
+    @DisplayName("Persoon mag na gebruik van de groei methode met parameters niet boven de maximumgrootte gaan")
     public void testLengteLimietNaGroeiMetParameters() {
         Persoon persoon = new Persoon();
         persoon.setLengte(2.2);
@@ -124,7 +125,7 @@ public class PersoonTest {
     }
 
     @Test
-    // @DisplayName("Persoon mag na gebruik van de groei methode zonder parameters niet boven de maximumgrootte gaan")
+    @DisplayName("Persoon mag na gebruik van de groei methode zonder parameters niet boven de maximumgrootte gaan")
     public void testLengteLimietNaGroeiZonderParameters() {
         Persoon persoon = new Persoon();
         persoon.setLengte(2.4);
