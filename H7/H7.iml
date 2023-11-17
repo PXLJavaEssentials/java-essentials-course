@@ -2,6 +2,8 @@
 <module version="4">
   <component name="AdditionalModuleElements">
     <content url="file://$MODULE_DIR$" dumb="true">
+      <excludeFolder url="file://$MODULE_DIR$/src/test/java/be/pxl/h7/oefening1" />
+      <excludeFolder url="file://$MODULE_DIR$/src/test/java/be/pxl/h7/oefening2" />
       <excludeFolder url="file://$MODULE_DIR$/src/test/java/be/pxl/h7/oefening3" />
       <excludeFolder url="file://$MODULE_DIR$/src/test/java/be/pxl/h7/oefening4" />
     </content>
