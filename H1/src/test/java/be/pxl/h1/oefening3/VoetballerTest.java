@@ -5,7 +5,7 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@GutsFixture(courseCode = "javaEss1", chapterCode = "H1", exerciseCode = "Oefening 3 - Voetballer", sourceCodeRelativeFilePaths = "Voetballer.java")
+@GutsFixture(courseCode = "javaEss1", chapterCode = "H1", exerciseCode = "Oefening 3 - Voetbal", sourceCodeRelativeFilePaths = "Voetballer.java")
 public class VoetballerTest {
 
     @Test

@@ -5,7 +5,7 @@ import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-@GutsFixture(courseCode = "javaEss1", chapterCode = "H1", exerciseCode = "Oefening 5 - Spaceship", sourceCodeRelativeFilePaths = "Spaceship.java")
+@GutsFixture(courseCode = "javaEss1", chapterCode = "H1", exerciseCode = "Oefening 5 - Space", sourceCodeRelativeFilePaths = "Spaceship.java")
 public class SpaceshipTest {
 
     @Test
