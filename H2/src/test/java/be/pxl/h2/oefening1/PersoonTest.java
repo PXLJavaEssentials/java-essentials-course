@@ -1,4 +1,4 @@
-package be.pxl.h2.oef1;
+package be.pxl.h2.oefening1;
 
 
 import be.pxl.guts.junit_5.GutsFixture;
