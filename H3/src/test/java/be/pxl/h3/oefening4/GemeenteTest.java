@@ -8,7 +8,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-@GutsFixture(courseCode = "javaEss1", chapterCode = "H3", exerciseCode = " 4 - Huwelijk", sourceCodeRelativeFilePaths = "Gemeente.java")
+@GutsFixture(courseCode = "javaEss1", chapterCode = "H3", exerciseCode = "4 - Huwelijk", sourceCodeRelativeFilePaths = "Gemeente.java")
 public class GemeenteTest {
 
     public static final String GEMEENTENAAM = "Hasselt";

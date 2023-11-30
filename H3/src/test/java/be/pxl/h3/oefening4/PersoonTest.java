@@ -55,13 +55,13 @@ public class PersoonTest {
     }
 
     @Test
-    @DisplayName("Persoon - Voor- en achternaam moet opgeslagen worden door constructor met 4 parameters")
+    @DisplayName("Persoon - Geboortedatum moet opgeslagen worden door constructor met 4 parameters")
     public void testGeboortedatumNaConstructor2() {
         assertEquals(BIRTHDAY, persoon2.getGeboortedatum());
     }
 
     @Test
-    @DisplayName("Persoon - Voor- en achternaam moet opgeslagen worden door constructor met 4 parameters")
+    @DisplayName("Persoon - Adres moet worden opgeslagen door constructor met 4 parameters")
     public void testAdresNaConstructor2() {
         assertEquals(AdresTest.STRAATNAAM, persoon2.getAdres().getStraat());
         assertEquals(AdresTest.HUISNUMMER, persoon2.getAdres().getHuisnummer());
