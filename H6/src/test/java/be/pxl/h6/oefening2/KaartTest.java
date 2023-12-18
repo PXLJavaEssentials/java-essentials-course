@@ -23,14 +23,14 @@ public class KaartTest {
     public void testKaartSetSoort() {
         Kaart kaart = new Kaart(Soort.SCHOPPEN, Waarde.AAS);
         kaart.setSoort(Soort.HARTEN);
-        assertEquals(Soort.HARTEN, kaart.getWaarde());
+        assertEquals(Soort.HARTEN, kaart.getSoort());
     }
 
     @Test
     @DisplayName("Kaart - setWaarde")
     public void testKaartSetWaarde() {
         Kaart kaart = new Kaart(Soort.SCHOPPEN, Waarde.AAS);
-        kaart.setWaarde(Waarde.BOER)
+        kaart.setWaarde(Waarde.BOER);
         assertEquals(Waarde.BOER, kaart.getWaarde());
     }
 }
