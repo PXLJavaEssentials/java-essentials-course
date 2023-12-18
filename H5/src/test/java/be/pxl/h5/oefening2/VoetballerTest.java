@@ -10,7 +10,7 @@ import static org.junit.jupiter.api.Assertions.*;
 @GutsFixture(courseCode = "javaEss1", chapterCode = "H5", exerciseCode = "2 - Sporters", sourceCodeRelativeFilePaths = "Voetballer.java")
 public class VoetballerTest {
     @Test
-    @DisplayName("Sporter - Constructor met 2 parameters moet naam opslaan")
+    @DisplayName("Voetballer - Constructor met 2 parameters moet naam opslaan")
     public void testConstructorMet2Parameters() {
         Voetballer voetballer = new Voetballer("Janssen", "Kurt");
         assertTrue("Kurt".equalsIgnoreCase(voetballer.getVoornaam()));
@@ -21,7 +21,7 @@ public class VoetballerTest {
     }
 
     @Test
-    @DisplayName("Sporter - Constructor met 4 parameters moet naam, club en opstelling opslaan. Omschrijving moet standaard 'voetbal' zijn.")
+    @DisplayName("Voetballer - Constructor met 4 parameters moet naam, club en opstelling opslaan. Omschrijving moet standaard 'voetbal' zijn.")
     public void testConstructorMet4Parameters() {
         Voetballer voetballer = new Voetballer("Janssen", "Kurt", "PSV", "verdediger");
         assertTrue("Kurt".equalsIgnoreCase(voetballer.getVoornaam()));
@@ -32,7 +32,7 @@ public class VoetballerTest {
     }
 
     @Test
-    @DisplayName("Sporter - setOpstelling moet de opstelling opslaan als het een geldige opstelling is")
+    @DisplayName("Voetballer - setOpstelling moet de opstelling opslaan als het een geldige opstelling is")
     public void testSetOpstellingJuist() {
         Voetballer voetballer = new Voetballer("Janssen", "Kurt");
         voetballer.setOpstelling("verdediger");
@@ -40,7 +40,7 @@ public class VoetballerTest {
     }
 
     @Test
-    @DisplayName("Sporter - setOpstelling moet als opstelling 'onbepaald' opslaan als het geen geldige opstelling is")
+    @DisplayName("Voetballer - setOpstelling moet als opstelling 'onbepaald' opslaan als het geen geldige opstelling is")
     public void testSetOpstellingFout() {
         Voetballer voetballer = new Voetballer("Janssen", "Kurt");
         voetballer.setOpstelling("duivenmelker");
