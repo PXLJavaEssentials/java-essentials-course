@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class SpaceshipTest {
 
     @Test
-    @DisplayName("Ship - name property")
+    @DisplayName("Ship - property name")
     public void testGetName() {
         Spaceship spaceship = new Spaceship();
         spaceship.setName("Falcon");
@@ -18,7 +18,7 @@ public class SpaceshipTest {
     }
 
     @Test
-    @DisplayName("Ship - shield property")
+    @DisplayName("Ship - property shield")
     public void testIsShieldOn() {
         Spaceship spaceship = new Spaceship();
         spaceship.setShieldOn(true);
