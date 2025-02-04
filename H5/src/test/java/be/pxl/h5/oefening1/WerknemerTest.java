@@ -1,7 +1,6 @@
 package be.pxl.h5.oefening1;
 
 import be.pxl.guts.junit_5.GutsFixture;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 

@@ -16,13 +16,13 @@ public class SoortTest {
     public static final List<String> otherList = Arrays.asList("HARTEN", "RUITEN", "SCHOPPEN", "KLAVEREN");
 
     @Test
-    @DisplayName("Waarde - should contain exactly 4 card colors")
+    @DisplayName("Soort - should contain exactly 4 card colors")
     public void testCorrectNumberOfCardColors() {
         assertEquals(4, Soort.values().length);
     }
 
     @Test
-    @DisplayName("Waarde - should contain only valid card colors")
+    @DisplayName("Soort - should contain only valid card colors")
     public void testCorrectNumberOfCardValues() {
         for(Soort s:Soort.values()) {
             assertTrue(otherList.contains(s.name()));
